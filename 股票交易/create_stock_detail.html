@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>发行新股</title>
+
+	</head>
+	<script src="js/function.js"></script>
+
+	<body>
+
+		<center>
+			<h1>创建新股的具体信息</h1>
+		</center>
+
+		<table id="create_newstock_detail_tbl" width="100%" border="1" align="center">
+			<tr>
+				<td align="center">
+					<h3>名称</h3></td>
+				<td align="middle">
+					<h3>创建者</h3></td>
+				<td align="center">
+					<h3>我</h3>
+				</td>
+			</tr>
+			<tr>
+
+				<td>
+					<center>210458</center>
+				</td>
+				<td>
+					<center>二丫</center>
+				</td>
+				<td>
+					<center>5000</center>
+				</td>
+
+			</tr>
+		</table>
+
+		<table width="100%" border="1" align="center" id="newstock_allocate_tbl">
+			<tr>
+				<h2><center>新股分配</center></h2>
+			</tr>
+			<tr>
+				<td align="center">
+					<h3>分配数量</h3></td>
+				<td align="center">
+					<h3>分配对象</h3></td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_quantity" 
+						name="allocate_input"
+						value="请输入分配数量" 
+						onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_object" 
+						name="allocate_input"
+						value="请输入分配对象" 
+						onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_quantity" 
+						name="allocate_input"
+						value="请输入分配数量" 
+						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						 onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_object" 
+						name="allocate_input"
+						value="请输入分配对象" 
+						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						 onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_quantity" 
+						name="allocate_input"
+						value="请输入分配数量" 
+						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						 onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_object" 
+						name="allocate_input"
+						value="请输入分配对象" 
+						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						 onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_quantity" 
+						name="allocate_input"
+						value="请输入分配数量" 
+						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						 onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_object" 
+						name="allocate_input"
+						value="请输入分配对象" 
+						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						 onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+
+			</tr>
+			<tr>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_quantity" 
+						name="allocate_input"
+						value="请输入分配数量" 
+						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						 onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" id="allocate_object" 
+						name="allocate_input"
+						value="请输入分配对象" 
+						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+						 onblur="if(!value){value=defaultValue;this.style.color='#999'}"/>
+				</td>
+
+			</tr>
+
+		</table>
+
+		<input type="button" value="添加行" style="width: 100%;background-color: aquamarine;" onclick="add_row_allcate()" />
+
+		<center><input type="button" value="确认" style="width: 100%;background-color: aquamarine;" onclick="feedback_allocate()" /></center>
+	</body>
+
+</html>

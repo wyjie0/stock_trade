@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的主界面</title>
+
+	</head>
+	<script src="js/function.js"></script>
+
+	<body>
+
+		<table border="1" align="center" width="100%">
+			<tr>
+				<center>
+					<h1>管理股票</h1></center>
+			</tr>
+
+			<tr>
+				<td class="manage_name" align="center">
+					<h3>名称</h3></td>
+				<td class="manage_creator" align="center">
+					<h3>发行者</h3></td>
+				<td class="manage_my_stock" align="middle">
+					<h3>我的股份</h3></td>
+			</tr>
+			<tr>
+				<td class="manage_name" align="center">
+					<h3>000000</h3></td>
+				<td class="manage_creator" align="center">
+					<h3>乙</h3></td>
+				<td class="manage_my_stock" align="center">
+					<h3>721</h3></td>
+			</tr>
+
+		</table>
+
+		<table border="1" align="center" width="100%" id="transfer_manage">
+			<tr>
+				<center>
+					<h1>转让管理</h1></center>
+			</tr>
+
+			<tr>
+				<td class="manage_name" align="center" height="20px">
+					我的未授权<font style="color: red;">241</font>
+				</td>
+				<td rowspan="2">
+					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入转让数量" 
+						name="transfer_input" 
+						id="transfer_num" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
+						onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
+				</td>
+				<td rowspan="2">
+					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入转让对象" 
+						name="transfer_input" 
+						id="transfer_object" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
+						onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
+				</td>
+				<td rowspan="2">
+					<input type="button" value="确定" onclick="feedback_transfer()" style="background-color: aquamarine;
+						width: 100%;height:100% " />
+				</td>
+			</tr>
+			<tr>
+				<td height="20px" align="center">
+
+					<select name="trans_manage_my_unauth" style="width: 100%;">
+						<option value="0">我的未授权241</option>
+						<option value="1">王苗80</option>
+						<option value="2">赵权100</option>
+						<option value="3">孙二100</option>
+					</select>
+			</tr>
+		</table>
+
+		<input align="center" type="button" value="添加行" style="background-color: aquamarine; width: 100%;" onclick="add_row_transfer()" />
+
+		<table border="1" align="center" width="100%" id="author_manage">
+			<tr>
+				<center>
+					<h1>授权</h1></center>
+			</tr>
+			<tr>
+
+				<td class="manage_name" align="center" height="20px">
+					我的未授权 <font style="color: red;">241</font>
+				</td>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入授权数量"
+						id="auth_num" 
+						name="auth_input"
+						onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
+						onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
+				</td>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入授权对象" 
+						 id="auth_object"
+						 name="auth_input"
+						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
+						 onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
+				</td>
+				<td>
+					<input type="button" value="确定" onclick="feedback_auth()" style="background-color: aquamarine;
+						width: 100%;height: 100%;" />
+				</td>
+
+			</tr>
+
+		</table>
+
+		<input align="center" type="button" value="添加行" style="background-color: aquamarine; width: 100%;" onclick="add_row_auth()" />
+
+	</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>发行新股</title>
+
+	</head>
+	<script src="js/function.js"></script>
+
+	<body>
+
+		<center>
+			<h1>发行新股</h1>
+		</center>
+
+		<table id="create_newstock_tbl" width="500px" border="1" align="center">
+			<tr>
+				<td align="center" id="newstock_name_td">
+					<h3>名称</h3></td>
+				<td align="center" id="newstock_total_td">
+					<h3>总量</h3></td>
+				<td align="center" id="newstock_creator_td">
+					<h3>发行人</h3></td>
+				<td align="center" id="newstock_operation_td">
+					<h3>操作</h3>
+				</td>
+			</tr>
+			<tr>
+
+				<td>210458</td>
+				<td><input style="border: hidden; color: #999;width: 100%;" 
+					id="input_newstock_total" 
+					value="请输入股票总量" 
+					onfocus="if(value==defaultValue){value='';this.style.color='#000'}"
+					onblur="if(!value){value=defaultValue;this.style.color='#999'}"/></td>
+				<td><center>二丫</center></td>
+				<td><input type="button" value="创建" 
+					style="background-color: aquamarine;width: 100%;height: 50px;" 
+					onclick="create()" 
+					/></td>
+
+			</tr>
+		</table>
+
+	</body>
+
+</html>
