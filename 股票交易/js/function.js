@@ -85,18 +85,19 @@ function add_row_auth(){
 	C = R.insertCell();
 	C.innerHTML = "";
 	C = R.insertCell();
-	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\" value=\"请输入授权数量\" "+
-	"id=\"auth_num\" name=\"auth_input\" onfocus=\"if(value==defaultValue){value='';this.style.color='#000'}\" "+
-	"onblur=\"if(!value){value=defaultValue;this.style.color='#999'}\"/>";
-	C = R.insertCell();
 	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\" value=\"请输入授权对象\" "+
 	"id=\"auth_object\" name=\"auth_input\" onfocus=\"if(value==defaultValue){value='';this.style.color='#000'}\" "+
+	"onblur=\"if(!value){value=defaultValue;this.style.color='#999'}\"/>";
+	C = R.insertCell();
+	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\" value=\"请输入授权数量\" "+
+	"id=\"auth_num\" name=\"auth_input\" onfocus=\"if(value==defaultValue){value='';this.style.color='#000'}\" "+
 	"onblur=\"if(!value){value=defaultValue;this.style.color='#999'}\"/>";
 }
 
 function add_row_allcate(){
 	var tbl;
-	tbl = document.getElementById("newstock_allocate");
+	tbl = document.getElementById("newstock_allocate_tbl");
+	
 	R = tbl.insertRow();
 	C = R.insertCell();
 	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\" "+

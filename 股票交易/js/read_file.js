@@ -5,7 +5,7 @@ function my_readfile(){
 	else{
 		alert("不支持");
 	}
-	fr.readAsText("files/user_info.txt");
+	fr.readAsText("");
 	fr.onload = function(e){
 		alert(this.result);
 	}

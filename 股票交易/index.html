@@ -64,12 +64,25 @@
 					</td>
 				<br />
 			</tr>
+			<tr id="license-wrapper">
+				<td><label for="license">&nbsp;&nbsp;&nbsp;&nbsp;营业执照</label></td>
+				<td><input  id="license" type="text" name="license"
+					style="border: 1px;
+					border-top-style: groove;
+					border-right-style: groove;
+					border-bottom-style: groove;
+					border-left-style: groove;	
+					height: 30px;
+					width: 200px;"/>
+					</td>
+				<br />
+			</tr>
 			<tr>
 				<td>
 					<br />
-					<input type="radio" value="creator" id="creator_radio" name="sel_id"/>
+					<input type="radio" value="creator" id="creator_radio" name="sel_id" checked="checked"/>
 					发行者
-					<input type="radio" value="normal" id="normal_radio" name="sel_id" checked="checked"/>
+					<input type="radio" value="normal" id="normal_radio" name="sel_id"/>
 					普通用户
 				</td>
 			</tr>
@@ -87,7 +100,20 @@
 			</table>
 		</div>
 		
-		
+		<script type="text/javascript">
+			window.onload = function() {
+				var license = document.getElementById("license-wrapper")
+				var creator_radio = document.getElementById("creator_radio")
+				var normal_radio = document.getElementById("normal_radio")
+				creator_radio.onclick = function() {
+					license.style.display = ""
+				}
+				normal_radio.onclick = function() {
+					license.style.display = "none"
+				}
+
+			}
+		</script>
 	</body>
 </html>
 

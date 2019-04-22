@@ -14,8 +14,6 @@
 			<tr>
 				<td colspan="2" id="my_hold" style="border: hidden;"><center>我的持有</center></td>
 				<td id="my_agent" style="border: hidden;"><center>我的代理</center></td>
-				<td id="others" style="border: hidden;"><center>其他持有人</center></td>
-				<td id="total" style="border: hidden;"><center>股票总量</center></td>
 			</tr>
 			<tr>
 				<td id="my_unauth" style="border: hidden;"><center>我的未授权</center></td>
@@ -28,41 +26,34 @@
 				<td >241</td>
 				<td >200</td>
 				<td >280</td>
-				<td >1179</td>
-				<td >2000</td>
 			</tr>
 			<tr>
 				<td ></td>
 				<td >二丫 100</td>
 				<td >三傻 80</td>
-				<td >大头 79</td>
-				<td ></td>
 			</tr>
 			<tr>
 				<td ></td>
 				<td >杰克 100</td>
 				<td >赵云 100</td>
-				<td >刘备 200</td>
-				<td ></td>
 			</tr>
 			<tr>
 				<td ></td>
 				<td ></td>
 				<td >孙二 100</td>
-				<td >曹操 450</td>
-				<td ></td>
 			</tr>
 			<tr>
 				<td ></td>
 				<td ></td>
-				<td ></td>
-				<td >关羽 450</td>
 				<td ></td>
 			</tr>
 		</table>
 		<input type="button" value="管理股票" onclick="manage_stock()"/>
 		<br />
 		<input type="button" value="股权详情" onclick="stock_right_details()"/>
+		<br />
+		<br />
+		<input type="button" value="返回" onclick="history.back(-1)"/>
 	</body>
 
 </html>
