@@ -4,18 +4,6 @@
 	* @param {Number} lesson 课程
 */
 
-//function readFile(){
-//	if(window.FileReader) {
-//		var file = this.files[0];
-//		filename = file.name.split('.')[0];
-//		var reader = new FileReader();
-//		reader.onload = function() {
-//			var ret = this.result;
-//		}
-//		reader.readAsText(file);
-//	}
-//	return ret;
-//}
 
 function log_in(){
 	var usr, pwd;
@@ -31,10 +19,6 @@ function log_in(){
 			value = sel_id_radio[i].value;
 		}
 	}
-	
-//	while(account < 3){
-//		
-//	}
 	
 	if(value == 'creator'){
 		self.location = "creator_function.html";
