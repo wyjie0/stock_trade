@@ -46,16 +46,17 @@
 					我的未授权<font style="color: red;">241</font>
 				</td>
 				<td rowspan="2">
-					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入转让数量" 
-						name="transfer_input" 
-						id="transfer_num" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
-						onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
-				</td>
-				<td rowspan="2">
 					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入转让对象" 
 						name="transfer_input" 
 						id="transfer_object" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
 						onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
+				</td>
+				<td rowspan="2">
+					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入转让数量" 
+						name="transfer_input" 
+						id="transfer_num" onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
+						onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
+					
 				</td>
 				<td rowspan="2">
 					<input type="button" value="确定" onclick="feedback_transfer()" style="background-color: aquamarine;
@@ -87,18 +88,19 @@
 					我的未授权 <font style="color: red;">241</font>
 				</td>
 				<td>
-					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入授权数量"
-						id="auth_num" 
-						name="auth_input"
-						onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
-						onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
-				</td>
-				<td>
 					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入授权对象" 
 						 id="auth_object"
 						 name="auth_input"
 						 onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
 						 onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
+					
+				</td>
+				<td>
+					<input style="border: hidden;width: 100%; color: #999;" type="text" value="请输入授权数量"
+						id="auth_num" 
+						name="auth_input"
+						onfocus="if(value==defaultValue){value='';this.style.color='#000'}" 
+						onblur="if(!value){value=defaultValue;this.style.color='#999'}" />
 				</td>
 				<td>
 					<input type="button" value="确定" onclick="feedback_auth()" style="background-color: aquamarine;

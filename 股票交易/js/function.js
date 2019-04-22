@@ -69,12 +69,12 @@ function add_row_transfer(){
 	C = R.insertCell();
 	C.innerHTML = "";
 	C = R.insertCell();
-	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\" value=\"请输入转让数量\" "+
-	"id=\"transfer_num\" name=\"transfer_input\" onfocus=\"if(value==defaultValue){value='';this.style.color='#000'}\" "+
-	"onblur=\"if(!value){value=defaultValue;this.style.color='#999'}\"/>";
-	C = R.insertCell();
 	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\" value=\"请输入转让对象\" "+
 	"id=\"transfer_object\" name=\"transfer_input\" onfocus=\"if(value==defaultValue){value='';this.style.color='#000'}\" "+
+	"onblur=\"if(!value){value=defaultValue;this.style.color='#999'}\"/>";
+	C = R.insertCell();
+	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\" value=\"请输入转让数量\" "+
+	"id=\"transfer_num\" name=\"transfer_input\" onfocus=\"if(value==defaultValue){value='';this.style.color='#000'}\" "+
 	"onblur=\"if(!value){value=defaultValue;this.style.color='#999'}\"/>";
 }
 
@@ -100,13 +100,14 @@ function add_row_allcate(){
 	
 	R = tbl.insertRow();
 	C = R.insertCell();
-	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\" "+
-	"id=\"allocate_quantity\" name=\"allocate_input\" value=\"请输入分配数量\""+
-	" onfocus=\"if(value==defaultValue){value='';this.style.color='#000'}\"  "+
-	"onblur=\"if(!value){value=defaultValue;this.style.color='#999'}\"/>"
-	C = R.insertCell();
 	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\""+
 	" id=\"allocate_object\" name=\"allocate_input\" value=\"请输入分配对象\" "+
 	"onfocus=\"if(value==defaultValue){value='';this.style.color='#000'}\"  "+
+	"onblur=\"if(!value){value=defaultValue;this.style.color='#999'}\"/>"
+	
+	C = R.insertCell();
+	C.innerHTML = "<input style=\"border: hidden;width: 100%; color: #999;\" "+
+	"id=\"allocate_quantity\" name=\"allocate_input\" value=\"请输入分配数量\""+
+	" onfocus=\"if(value==defaultValue){value='';this.style.color='#000'}\"  "+
 	"onblur=\"if(!value){value=defaultValue;this.style.color='#999'}\"/>"
 }
